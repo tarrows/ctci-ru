@@ -1,11 +1,13 @@
-pub fn q_01(input: &str) -> String {
-  format!("{}", input)
+pub fn q01(input: &str) -> String {
+  String::from(input)
 }
 
 #[cfg(test)]
 mod tests {
+  use super::*;
+
   #[test]
-  fn q_01() {
-    assert_eq!("apple", "apple");
+  fn q_01_test() {
+    assert_eq!(q01("apple"), "apple");
   }
 }
